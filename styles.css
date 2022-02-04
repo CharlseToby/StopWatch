@@ -20,24 +20,33 @@ body {
   justify-content: center;
   align-items: center;
   background-color: rgb(32, 32, 32);
-  width: 400px;
-  height: 200px;
+  width: 600px;
+  height: 300px;
 }
 
 .stopWatch {
   color: white;
-  font-size: 50px;
+  font-size: 70px;
+  letter-spacing: 0px;
+  word-spacing: -16px;
+}
+
+.container {
+  padding: 5px 0 25px 0;
 }
 
 .stopWatch span {
   margin-right: 0;
   padding: 0;
 }
+.buttons {
+  padding: 1px 0 30px 0;
+}
 
 button {
   cursor: pointer;
   margin: 4px 8px;
-  padding: 2px 19px;
+  padding: 2px 21px;
   border-radius: 12px;
   border: 1px solid #fff;
   outline: none;
@@ -45,4 +54,13 @@ button {
   color: #fff;
   text-transform: capitalize;
   font-size: 12px;
+  transition: font-size 0.5s, border 0.5s, color 0.5s, background-color 0.5s;
+}
+button:hover {
+  font-size: 16px;
+  border: 1px solid #000;
+  transition-timing-function: ease-in;
+  background-color: antiquewhite;
+  color: #000;
+  /* transition-delay: all 0.5s; */
 }

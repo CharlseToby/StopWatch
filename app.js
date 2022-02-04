@@ -24,12 +24,7 @@ let active = false;
 function displayClock(){
   stopWatchDOM.innerHTML = `
     <div class="stopWatch">
-      <span id="a">${aValue}</span>
-      <span id="b">${bValue}:</span>
-      <span id="c">${cValue}</span>
-      <span id="d">${dValue}:</span>
-      <span id="e">${eValue}</span>
-      <span id="f">${fValue}</span>
+      ${aValue}${bValue} : ${cValue}${dValue} : ${eValue}${fValue}
     </div>
   `;
 };
